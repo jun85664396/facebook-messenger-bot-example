@@ -12,11 +12,15 @@ Requires Rails >= 4.2.0
 
 ##initialization
 
-    touch .env
+    vim .env
       ACCESS_TOKEN=<ACCESS_TOKEN>
       VERIFY_TOKEN=<VERIFY_TOKEN>
       
 ##Usage
+
+![Example](https://i.imgur.com/YTMOYg6.gif)
+
+
   
     15         text = event["message"]["text"]
                # Handle a text message from this sender
@@ -25,4 +29,3 @@ Requires Rails >= 4.2.0
     18         # { ret: true or false, body: response_body }
 
 generic example : https://developers.facebook.com/docs/messenger-platform/send-api-reference#examples
-  
