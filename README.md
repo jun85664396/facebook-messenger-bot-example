@@ -25,7 +25,7 @@ Requires Rails >= 4.2.0
     15         text = event["message"]["text"]
                # Handle a text message from this sender
     16         res = FacebookBot.new.send_text_message(sender, "reply: #{text}")
-    17         # res = FacebookBot.new.send_generic_message(sender)
+    17         # res = FacebookBot.new.send_generic_message(<template>)
     18         # { ret: true or false, body: response_body }
 
-generic example : https://developers.facebook.com/docs/messenger-platform/send-api-reference#examples
+template example : https://developers.facebook.com/docs/messenger-platform/send-api-reference#examples
